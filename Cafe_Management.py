@@ -32,9 +32,9 @@ def po():
 
 otn=[]
 
-try:
 
-    while (True):
+while (True):
+    try:
         pmenu()
         x= int(input('Enter food code: '))
         if x==0:
@@ -52,9 +52,10 @@ try:
         if yn=='n':
             print('Thankyou for ordering!')
             break
+    except:
+        print('Something went wrong. You might have entered Invalid input.')
 
 
-except:
-    print('Something went wrong. You might have entered Invalid input.')
+
 
     
