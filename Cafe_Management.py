@@ -11,7 +11,18 @@ class Orders:
     
 
     
-menu=[Orders('Pizza',200,'Italian',0,1),Orders('Burger',100,'American',0,2),Orders('Dosa',80,'Indian',0,3)]
+menu=[
+    Orders('Pizza',200,'Italian',0,1),
+    Orders('Burger',100,'American',0,2),
+    Orders('Dosa',80,'Indian',0,3),
+    Orders('Paneer Tikka', 120, 'Indian', 0, 4),
+    Orders('Chole Bhature', 90, 'Indian', 0, 5),
+    Orders('Samosa', 30, 'Indian', 0, 6),
+    Orders('Vada Pav', 40, 'Indian', 0, 7),
+    Orders('Rogan Josh', 200, 'Indian', 0, 8),
+    Orders('Idli', 50, 'Indian', 0, 9),
+    Orders('Pani Puri', 60, 'Indian', 0, 10)
+    ]
 def reset():
     for i in menu:
         i.orders=0
